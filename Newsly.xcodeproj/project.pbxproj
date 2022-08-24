@@ -15,9 +15,13 @@
 		864B83C328B3D61600926C4D /* NewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 864B83C228B3D61600926C4D /* NewsViewController.swift */; };
 		864B83C528B512CB00926C4D /* Article.swift in Sources */ = {isa = PBXBuildFile; fileRef = 864B83C428B512CB00926C4D /* Article.swift */; };
 		864B83C728B513AE00926C4D /* ArticleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 864B83C628B513AE00926C4D /* ArticleCell.swift */; };
+		86E0CCB728B66911006DF387 /* TopHeadlinesResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86E0CCB628B66911006DF387 /* TopHeadlinesResponse.swift */; };
+		86E0CCB928B67CD7006DF387 /* ArticleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86E0CCB828B67CD7006DF387 /* ArticleViewController.swift */; };
+		874B894007A994D1627A36BC /* Pods_Newsly.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44FEBCCD980D6D3BE048A485 /* Pods_Newsly.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		44FEBCCD980D6D3BE048A485 /* Pods_Newsly.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Newsly.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		864B83A928B3D2F500926C4D /* Newsly.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Newsly.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		864B83AC28B3D2F500926C4D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		864B83AE28B3D2F500926C4D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -28,6 +32,10 @@
 		864B83C228B3D61600926C4D /* NewsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsViewController.swift; sourceTree = "<group>"; };
 		864B83C428B512CB00926C4D /* Article.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Article.swift; sourceTree = "<group>"; };
 		864B83C628B513AE00926C4D /* ArticleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleCell.swift; sourceTree = "<group>"; };
+		86E0CCB628B66911006DF387 /* TopHeadlinesResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopHeadlinesResponse.swift; sourceTree = "<group>"; };
+		86E0CCB828B67CD7006DF387 /* ArticleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleViewController.swift; sourceTree = "<group>"; };
+		F01302EE073E78A657E7EED1 /* Pods-Newsly.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Newsly.release.xcconfig"; path = "Target Support Files/Pods-Newsly/Pods-Newsly.release.xcconfig"; sourceTree = "<group>"; };
+		F866AF685BC84EF6EA0C94D8 /* Pods-Newsly.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Newsly.debug.xcconfig"; path = "Target Support Files/Pods-Newsly/Pods-Newsly.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,17 +43,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				874B894007A994D1627A36BC /* Pods_Newsly.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0CF79AA8602E82244D9816D7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				44FEBCCD980D6D3BE048A485 /* Pods_Newsly.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		864B83A028B3D2F500926C4D = {
 			isa = PBXGroup;
 			children = (
 				864B83AB28B3D2F500926C4D /* Newsly */,
 				864B83AA28B3D2F500926C4D /* Products */,
+				E438ACB1C151E8F1056D2AB7 /* Pods */,
+				0CF79AA8602E82244D9816D7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -62,15 +81,26 @@
 			children = (
 				864B83AC28B3D2F500926C4D /* AppDelegate.swift */,
 				864B83AE28B3D2F500926C4D /* SceneDelegate.swift */,
+				86E0CCB828B67CD7006DF387 /* ArticleViewController.swift */,
 				864B83C228B3D61600926C4D /* NewsViewController.swift */,
 				864B83C628B513AE00926C4D /* ArticleCell.swift */,
 				864B83C428B512CB00926C4D /* Article.swift */,
+				86E0CCB628B66911006DF387 /* TopHeadlinesResponse.swift */,
 				864B83B228B3D2F500926C4D /* Main.storyboard */,
 				864B83B528B3D2FA00926C4D /* Assets.xcassets */,
 				864B83B728B3D2FA00926C4D /* LaunchScreen.storyboard */,
 				864B83BA28B3D2FA00926C4D /* Info.plist */,
 			);
 			path = Newsly;
+			sourceTree = "<group>";
+		};
+		E438ACB1C151E8F1056D2AB7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F866AF685BC84EF6EA0C94D8 /* Pods-Newsly.debug.xcconfig */,
+				F01302EE073E78A657E7EED1 /* Pods-Newsly.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -80,9 +110,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 864B83BD28B3D2FA00926C4D /* Build configuration list for PBXNativeTarget "Newsly" */;
 			buildPhases = (
+				32ABC41AC182E76F6E691437 /* [CP] Check Pods Manifest.lock */,
 				864B83A528B3D2F500926C4D /* Sources */,
 				864B83A628B3D2F500926C4D /* Frameworks */,
 				864B83A728B3D2F500926C4D /* Resources */,
+				683CD314C3ED721D7ACC8626 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -139,6 +171,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		32ABC41AC182E76F6E691437 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Newsly-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		683CD314C3ED721D7ACC8626 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Newsly/Pods-Newsly-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Newsly/Pods-Newsly-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Newsly/Pods-Newsly-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		864B83A528B3D2F500926C4D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -146,6 +220,8 @@
 			files = (
 				864B83C528B512CB00926C4D /* Article.swift in Sources */,
 				864B83C328B3D61600926C4D /* NewsViewController.swift in Sources */,
+				86E0CCB928B67CD7006DF387 /* ArticleViewController.swift in Sources */,
+				86E0CCB728B66911006DF387 /* TopHeadlinesResponse.swift in Sources */,
 				864B83AD28B3D2F500926C4D /* AppDelegate.swift in Sources */,
 				864B83C728B513AE00926C4D /* ArticleCell.swift in Sources */,
 				864B83AF28B3D2F500926C4D /* SceneDelegate.swift in Sources */,
@@ -290,6 +366,7 @@
 		};
 		864B83BE28B3D2FA00926C4D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F866AF685BC84EF6EA0C94D8 /* Pods-Newsly.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -318,6 +395,7 @@
 		};
 		864B83BF28B3D2FA00926C4D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F01302EE073E78A657E7EED1 /* Pods-Newsly.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
