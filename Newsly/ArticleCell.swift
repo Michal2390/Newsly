@@ -15,18 +15,17 @@ class ArticleCell: UICollectionViewCell {
     
     override func prepareForReuse() {
         super.prepareForReuse()
-        
         headlineLabel.text?.removeAll()
         articleImageView.image = nil
     }
     
     func populate(with article: Article) {
         headlineLabel.text = article.headline
-
+        
         //cache-ing photos from the internet
-        if let urlToImage = article.urlToImage{
+        if let urlToImage = article.urlToImage {
             let url = URL(string: urlToImage)
-        articleImageView.kf.setImage(with: url)
+            articleImageView.kf.setImage(with: url)
         }
     }
 }

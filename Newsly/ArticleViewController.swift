@@ -9,22 +9,17 @@ import UIKit
 import WebKit
 
 class ArticleViewController: UIViewController {
-
     
     @IBOutlet weak var articleWebView: WKWebView!
     
     var article: Article?
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        if let articleUrl = article?.url, let url = URL(string: articleUrl) {
-            let request = URLRequest(url: url)
-            
-            articleWebView.load(request)
-        }
+        guard let articleUrl = article?.url else { return }
+        guard let url = URL(string: articleUrl) else { return }
         
-        
+        articleWebView.load(URLRequest(url: url))
     }
 }
