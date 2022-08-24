@@ -64,4 +64,20 @@ class NewsViewController: UICollectionViewController, UICollectionViewDelegateFl
         
         return size
     }
+    
+    
+    override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let article = articles[indexPath.item]
+        performSegue(withIdentifier: "swegue.Main.newsToArticle", sender: article)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        super.prepare(for: segue, sender: sender)
+        
+        if let articleVC = segue.destination as? ArticleViewController, let article = sender as? Article{
+            articleVC.article = article
+        }
+    }
+    
+    
 }

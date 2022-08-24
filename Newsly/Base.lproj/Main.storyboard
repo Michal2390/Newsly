@@ -79,7 +79,7 @@
                     </collectionView>
                     <navigationItem key="navigationItem" title="News" id="HgQ-gq-5oO"/>
                     <connections>
-                        <segue destination="sGO-i4-4D2" kind="show" id="Y50-gn-7ji"/>
+                        <segue destination="sGO-i4-4D2" kind="show" identifier="swegue.Main.newsToArticle" id="Y50-gn-7ji"/>
                     </connections>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Uxv-V0-vD1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -89,7 +89,7 @@
         <!--Article-->
         <scene sceneID="wsh-8N-N2A">
             <objects>
-                <viewController title="Article" id="sGO-i4-4D2" sceneMemberID="viewController">
+                <viewController title="Article" id="sGO-i4-4D2" customClass="ArticleViewController" customModule="Newsly" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="SCB-ck-tY8">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -113,6 +113,9 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="zgE-N2-aaz"/>
+                    <connections>
+                        <outlet property="articleWebView" destination="tZH-4z-KHP" id="qZ0-Kd-vw9"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mC8-fA-tfe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
